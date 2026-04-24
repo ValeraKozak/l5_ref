@@ -1,0 +1,23 @@
+{
+  "name": "lab5-library-service-layer",
+  "version": "1.0.0",
+  "description": "Laboratory work 5: business logic, services, and unit testing in JavaScript",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "jest --runInBand",
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "javascript",
+    "lab5",
+    "controller-service-repository"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^10.2.1",
+    "jest": "^30.3.0"
+  }
+}
