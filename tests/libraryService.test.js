@@ -86,6 +86,12 @@ test("issueBook rejects unknown user", () => {
   expect(() => service.issueBook(1, 999)).toThrow(/User not found/);
 });
 
+test("issueBook rejects unknown book", () => {
+  const { service } = createService();
+
+  expect(() => service.issueBook(999, 1)).toThrow(/Book not found/);
+});
+
 test("returnBook successfully marks a book as available", () => {
   const { service, bookRepository } = createService();
 
